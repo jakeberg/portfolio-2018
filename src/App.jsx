@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css';
 // HEY! Why don't dis work??? 
 // import '../semantic/dist/semantic.min.css';
