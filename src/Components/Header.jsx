@@ -12,7 +12,9 @@ class Header extends Component {
                         <img src={imageHeader} />
                     </div>
                     <div className="header-content">
+                    <div className="box">
                         <h1>Jacob<br />Victor<br /> Berg</h1>
+                        </div>
                         <br />
                         <div className="arrowPosition">
                             <Icon name="angle down massive" />
