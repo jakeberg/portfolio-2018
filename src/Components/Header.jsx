@@ -1,27 +1,25 @@
 import React, { Component } from 'react';
 import { Container, Icon } from 'semantic-ui-react';
-import imageHeader from '../assets/photos/bg.jpg';
 
 class Header extends Component {
 
     render() {
+        let intElemScrollTop = document.getElementById("fullscreen-wrap")
+        console.log(intElemScrollTop)
         return (
-            <Container>
-                <header className="v-header">
-                    <div className="fullscreen-video-wrap">
-                        <img src={imageHeader} />
-                    </div>
-                    <div className="header-content">
+            <React.Fragment>
+                <div id="fullscreen-wrap">
+                </div>
+                <div className="header-content">
                     <div className="box">
                         <h1>Jacob<br />Victor<br /> Berg</h1>
                         </div>
                         <br />
                         <div className="arrowPosition">
-                            <Icon name="angle down massive" />
-                        </div>
+                            <Icon name="angle down" className="massive" />
                     </div>
-                </header>
-            </Container>
+                </div>
+            </React.Fragment>
         );
     }
 }

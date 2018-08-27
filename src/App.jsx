@@ -3,9 +3,10 @@ import 'semantic-ui-css/semantic.min.css';
 // HEY! Why don't dis work??? 
 // import '../semantic/dist/semantic.min.css';
 import './css/header.css';
-import Header from './Components/Header';
-import Section from './Components/Section';
-import Footer from './Components/Footer';
+import './css/content.css';
+import Header from './components/Header';
+import Section from './components/Section';
+import Footer from './components/Footer';
 
 
 class App extends Component {
