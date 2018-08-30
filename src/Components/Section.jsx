@@ -85,25 +85,6 @@ class Section extends Component {
                         <Card raised image="https://vignette.wikia.nocookie.net/howtoprogram/images/a/a9/CSS3.png/revision/latest?cb=20130422012035" />
                         <Card raised image="http://cdn1.cloudpro.co.uk/sites/cloudprod7/files/styles/thumbnail_large_620x350/public/Adobe_Creative_Cloud_logotype_with_icon_RGB_vertical_0.jpg?itok=s22idzOi" />
                     </Card.Group>
-                </Segment>
-                <h1>Video Projects</h1>
-                <Segment raised className="transparent">
-                    <Grid verticalAlign='middle' centered>
-                        <Grid.Column mobile={16} tablet={8} computer={5}> 
-                        <a href="http://google.com" className="ui medium image">
-                            <div className="ui fluid image">
-                                <div className="ui yellow ribbon label">Javascript</div>
-                                <img src={image} />
-                            </div> 
-                        </a> 
-                        </Grid.Column>
-                        <Grid.Column mobile={16} tablet={8} computer={5}><Image src={image} /></Grid.Column>
-                        <Grid.Column mobile={16} tablet={8} computer={5}><Image src={image} /></Grid.Column>
-                        <Grid.Column mobile={16} tablet={8} computer={5}><Image src={image} /></Grid.Column>
-                        <Grid.Column mobile={16} tablet={8} computer={5}><Image src={image} /></Grid.Column>
-                        <Grid.Column mobile={16} tablet={8} computer={5}><Image src={image} /></Grid.Column>
-                    </Grid>
-                </Segment>
                 <h1>Education:</h1>
                 <Segment raised className="transparent">
                     <Grid celled='internally'>
