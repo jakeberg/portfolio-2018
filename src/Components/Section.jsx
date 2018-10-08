@@ -31,9 +31,8 @@ class Section extends Component {
 
         return (
             <Container>
-                <br />
                 <h1>About me:</h1>
-                <Segment raised className="transparent">
+                <Segment raised >
                     <Grid>
                         <Grid.Column width={3}>
                             <Image src={profile} size='small' circular />
@@ -114,7 +113,7 @@ class Section extends Component {
                     <Grid celled='internally'>
                         <Grid.Row>
                             <Grid.Column width={2}>
-                                <Image src='https://static1.squarespace.com/static/5992c2c7a803bb8283297efe/t/5b2a595a2b6a2875afd7027c/1529502678388/kenzie_logo' />
+                                <Image src='https://brand.iu.edu/images/resources-trident.jpg' />
                             </Grid.Column>
                             <Grid.Column width={10}>
                                 <p>Kenzie Academy is a coding school based in Indianapolis, IN. As a student, I have created Javascript games, built Twitter clones, and developed React apps from the ground up.</p> </Grid.Column>
@@ -128,7 +127,7 @@ class Section extends Component {
 
                         <Grid.Row>
                             <Grid.Column width={2}>
-                                <Image src='https://brand.iu.edu/images/resources-trident.jpg' />
+                                <Image src='https://static1.squarespace.com/static/5992c2c7a803bb8283297efe/t/5b2a595a2b6a2875afd7027c/1529502678388/kenzie_logo' />
                             </Grid.Column>
                             <Grid.Column width={10}>
                                 <p>I studied production and design during my time at Indiana University. The skills I learned as a production student have made me incredibly organized and diligent in my work. I shot documentaries shown in film festivals, created motion graphics, worked on a Big Ten Network television show, and was employed at the local PBS station.</p>
