@@ -1,9 +1,0 @@
-.all-content {
-    margin: 300px;
-}
-
-@media(max-width:600px) {
-    .all-content {
-        margin: 50px;
-    }
-}

@@ -1,22 +1,58 @@
 import React, { Component } from 'react';
-import { Container, Icon } from 'semantic-ui-react';
+import styled from 'styled-components'
+import { Icon } from 'semantic-ui-react';
+
+const TitleWrapper = styled.div `{
+    padding: 5vw 0 0 5vw;
+}`
+
+const Title = styled.p `{
+    font-size: 10vw !important;
+    text-transform: uppercase;
+    line-height: 11.5vw !important;
+}`
 
 class Header extends Component {
+    
+    state = {
+        class: "large"
+    }
+
+    componentDidMount = () => {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    
+    componentWillUnmount = () => {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+    
+    handleScroll = () => {
+
+        if (window.pageYOffset > 100 || document.documentElement.scrollTop > 100) {
+            this.setState({
+                class: "small"
+            })
+        } else if (window.pageYOffset > 50 || document.documentElement.scrollTop > 100) {
+            this.setState({
+                class: "medium"
+            })
+        } else {
+            this.setState({
+                class: "large"
+            })
+        }
+    }
 
     render() {
-        let intElemScrollTop = document.getElementById("fullscreen-wrap")
-        console.log(intElemScrollTop)
         return (
             <React.Fragment>
-                <div id="fullscreen-wrap">
-                </div>
-                <div className="header-content">
-                    <div className="box">
-                        <h1>Jacob<br />Victor<br /> Berg</h1>
-                        </div>
-                        <br />
-                        <div className="arrowPosition">
-                            <Icon name="angle down" className="massive" />
+                <div id="fullscreen-wrap" className={this.state.class}>
+                    <TitleWrapper>
+                        <Title>Jacob<br /> Berg</Title>
+                        <p>Web Developer</p>
+                    </TitleWrapper>
+                    <div className="arrowPosition"> 
+                        <div className="arrow"><Icon name="angle down" className="massive" /></div>
                     </div>
                 </div>
             </React.Fragment>

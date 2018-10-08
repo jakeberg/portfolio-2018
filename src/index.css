@@ -2,6 +2,8 @@ body {
   margin: 0;
   line-height: 3rem;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer {
