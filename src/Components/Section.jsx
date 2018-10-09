@@ -38,7 +38,7 @@ class Section extends Component {
                             <Image src={profile} size='small' circular />
                         </Grid.Column>
                         <Grid.Column verticalAlign='middle' width={13}>
-                            <p>Jacob Berg is an experienced media professional with 5+ years in broadcasting, freelance videography, and creative media design.</p>
+                            <p>Hi, I'm a Junior Web Developer living and workgin in Indianapolis, IN. In addition to development and programming, I am an experienced media professional with 5+ years in broadcasting, freelance videography, and creative media design. Below are a group of recent projects I've worked on and I hope that you take some time to check them out. Thanks!</p>
                         </Grid.Column>
                     </Grid>
                 </Segment>
